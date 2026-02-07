@@ -1,0 +1,413 @@
+/* ===================================
+   QUICK FIX - Style existing HTML
+   =================================== */
+
+/* Resume Section Styling */
+.resume-section {
+  padding: 100px 0;
+  position: relative;
+}
+
+.resume-section-content {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.resume-section h2 {
+  font-size: 3rem;
+  font-weight: 800;
+  margin-bottom: 3rem !important;
+  color: #1a202c;
+  text-align: center;
+}
+
+body.dark-mode .resume-section h2 {
+  color: #f1f5f9;
+}
+
+.resume-section h3 {
+  font-size: 1.5rem;
+  font-weight: 900;
+  color: #1a202c;
+}
+
+.resume-section small {
+  font-size: 0.875rem;
+  font-weight: 400;
+  color: gray;
+}
+
+body.dark-mode .resume-section h3 {
+  color: #f1f5f9;
+}
+
+/* Experience Items */
+.resume-section-content .d-flex,
+.resume-section .d-flex {
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 20px;
+  padding: 2rem;
+  margin-bottom: 2rem !important;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.resume-section-content .d-flex:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.15);
+}
+
+body.dark-mode .resume-section .d-flex {
+  background: rgba(30, 41, 59, 0.7);
+  border-color: rgba(255, 255, 255, 0.1);
+}
+
+.resume-section .d-flex:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.15);
+}
+
+/* Subheading */
+.subheading {
+  color: #718096 !important;
+  font-weight: 400;
+  font-size: 1.1rem;
+  display: flex;
+  align-items: center;
+}
+
+body.dark-mode .subheading {
+  color: #cbd5e1 !important;
+}
+
+.subheading::before {
+  content: "\f1ad";
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+  margin-right: 0.5rem;
+  color: #667eea;
+}
+
+/* List Styling */
+.resume-section ul {
+  color: #718096;
+  line-height: 1.8;
+}
+
+body.dark-mode .resume-section ul {
+  color: #cbd5e1;
+}
+
+.resume-section li {
+  /* margin-bottom: 0.5rem; */
+}
+
+/* Text Primary - Dates */
+.text-primary {
+  background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%) !important;
+  color: white !important;
+  padding: 0.5rem 1rem !important;
+  border-radius: 50px !important;
+  font-size: 0.85rem !important;
+  font-weight: 600 !important;
+  white-space: nowrap !important;
+  display: inline-block !important;
+}
+
+/* Skills Icons */
+.list-inline.dev-icons {
+  display: flex !important;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+  margin: 3rem 0 !important;
+}
+
+.list-inline.dev-icons li {
+  font-size: 5rem !important;
+  color: #667eea;
+  transition: all 0.3s ease;
+  cursor: default;
+  padding: 1.5rem;
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 20px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+body.dark-mode .list-inline.dev-icons li {
+  background: rgba(30, 41, 59, 0.7);
+  border-color: rgba(255, 255, 255, 0.1);
+}
+
+.list-inline.dev-icons li:hover {
+  color: white;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  transform: translateY(-10px) scale(1.1);
+  box-shadow: 0 8px 25px rgba(102, 126, 234, 0.4);
+}
+
+/* FA-UL List */
+.fa-ul {
+  list-style: none !important;
+  padding-left: 0 !important;
+}
+
+.fa-ul li {
+  padding-left: 2.5rem !important;
+  position: relative;
+  margin-bottom: 1rem !important;
+  color: #718096 !important;
+  line-height: 1.8;
+}
+
+body.dark-mode .fa-ul li {
+  color: #cbd5e1 !important;
+}
+
+.fa-li {
+  position: absolute;
+  left: 0;
+  top: 0.3rem;
+  color: #667eea !important;
+  font-size: 1.2rem;
+}
+
+.fa-li i {
+  color: #667eea !important;
+}
+
+/* Project Links */
+.resume-section a[href^="http"] {
+  color: #667eea;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.resume-section a[href^="http"]:hover {
+  color: #764ba2;
+  text-decoration: none;
+}
+
+.resume-section a[href^="http"] i {
+  transition: all 0.3s ease;
+}
+
+.resume-section a[href^="http"]:hover i {
+  transform: translateX(3px);
+}
+
+/* Interests Section */
+#interests ul {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+#interests li {
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 20px;
+  padding: 2rem;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  text-align: center;
+  position: relative;
+  padding-top: 6rem;
+}
+
+body.dark-mode #interests li {
+  background: rgba(30, 41, 59, 0.7);
+  border-color: rgba(255, 255, 255, 0.1);
+}
+
+#interests li:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.15);
+}
+
+#interests li::before {
+  content: '';
+  position: absolute;
+  top: 1.5rem;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  color: white;
+}
+
+#interests li:nth-child(1)::before {
+  content: "⚽";
+}
+
+#interests li:nth-child(2)::before {
+  content: "🎮";
+}
+
+#interests li:nth-child(3)::before {
+  content: "🎬";
+}
+
+#interests li:nth-child(4)::before {
+  content: "🍳";
+}
+
+/* Education Cards */
+#education .d-flex {
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 20px;
+  padding: 2rem;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  position: relative;
+  padding-left: 7rem;
+  min-height: 150px;
+}
+
+body.dark-mode #education .d-flex {
+  background: rgba(30, 41, 59, 0.7);
+  border-color: rgba(255, 255, 255, 0.1);
+}
+
+#education .d-flex:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.15);
+}
+
+#education .d-flex::before {
+  content: "\f19d";
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+  position: absolute;
+  left: 2rem;
+  top: 2rem;
+  width: 60px;
+  height: 60px;
+  border-radius: 15px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.75rem;
+  color: white;
+}
+
+#education .d-flex:nth-child(2)::before {
+  content: "\f549";
+}
+
+/* Project Section Cards */
+#project .d-flex {
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 20px;
+  padding: 2rem;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  flex-direction: column !important;
+}
+
+body.dark-mode #project .d-flex {
+  background: rgba(30, 41, 59, 0.7);
+  border-color: rgba(255, 255, 255, 0.1);
+}
+
+#project .d-flex:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.15);
+}
+
+#project h3 {
+  position: relative;
+  padding-left: 4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+#project h3::before {
+  content: "\f0b1";
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 50px;
+  height: 50px;
+  border-radius: 10px;
+  background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  color: white;
+}
+
+/* Spacing Adjustments */
+.mb-5 {
+  margin-bottom: 3rem !important;
+}
+
+.mb-3 {
+  margin-bottom: 2rem !important;
+}
+
+.mb-2 {
+  margin-bottom: 1rem !important;
+}
+
+.mb-0 {
+  margin-bottom: 0 !important;
+}
+
+/* HR Remove */
+hr.m-0 {
+  display: none;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .resume-section h2 {
+    font-size: 2rem;
+  }
+  
+  .list-inline.dev-icons li {
+    font-size: 3.5rem !important;
+    padding: 1rem;
+  }
+  
+  #education .d-flex {
+    padding-left: 2rem;
+    padding-top: 5rem;
+  }
+  
+  #education .d-flex::before {
+    left: 50%;
+    transform: translateX(-50%);
+    top: 1rem;
+  }
+  
+  #interests ul {
+    grid-template-columns: 1fr;
+  }
+}

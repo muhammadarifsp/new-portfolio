@@ -138,19 +138,15 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Theme Toggle */
 .theme-toggle {
-  /* position: fixed;
-  bottom: 20px;
+  position: fixed;
+  top: 20px;
   right: 20px;
-  z-index: 9999; */
-}
-
-.align-content-center {
-  align-content: center;
+  z-index: 9999;
 }
 
 .theme-toggle-btn {
-  width: 35px;
-  height: 35px;
+  width: 50px;
+  height: 50px;
   border-radius: 50%;
   border: none;
   background: var(--primary-gradient);
@@ -162,17 +158,6 @@ h1, h2, h3, h4, h5, h6 {
   display: flex;
   align-items: center;
   justify-content: center;
-}
-
-/* lg screen */
-
-.theme-toggle {
-  padding: 0.5rem 1.5rem;
-}
-@media (min-width: 992px) {
-  .theme-toggle {
-    padding: 0;
-  }
 }
 
 .theme-toggle-btn:hover {
@@ -220,7 +205,7 @@ h1, h2, h3, h4, h5, h6 {
   content: '';
   position: absolute;
   bottom: 0;
-  left: 45%;
+  left: 50%;
   transform: translateX(-50%);
   width: 0;
   height: 2px;
@@ -244,15 +229,7 @@ h1, h2, h3, h4, h5, h6 {
   align-items: center;
   position: relative;
   overflow: hidden;
-  padding-top: 120px !important;
-}
-
-/* lg screen */
-
-@media (min-width: 992px) {
-  .hero-section {
-  padding-top: 80px !important;
-  }
+  padding-top: 80px;
 }
 
 .particles-container {
